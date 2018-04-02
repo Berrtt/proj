@@ -6,10 +6,10 @@ public class Calculator {
 	private float z;
 		
 	public float calcR() {
-		return  this.x/100*this.y;//расход на 1км
+		return  this.x/100*this.y;//расход на указанное рассто€ние
 	}
 	public float calcS(float r) {
-		return r*this.z;
+		return r*this.z;//стоимость топлива
 	}
 	public float getX() {
 		return x;
