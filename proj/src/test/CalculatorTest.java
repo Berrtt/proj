@@ -15,7 +15,7 @@ class CalculatorTest {
 		calculator.setX(8);//расход на 100км
 		calculator.setY(100);//расстоо€ние
 		float r = calculator.calcR();
-		assertEquals(r, 8);//результат, который должен быть
+		assertEquals(r, 8);//результат, который должен быть. –асход топлива на указанное рассто€ние
 	}
 
 	@Test
@@ -24,7 +24,7 @@ class CalculatorTest {
 		calculator.setZ(40);//стоимость за 1 литр
 		float r = 8;//расход на указанное рассто€ние
 		float s = calculator.calcS(r);
-		assertEquals(s, 320);//результат, который должен быть
+		assertEquals(s, 320);//результат, который должен быть.  —тоимость топлива на указанное рассто€ние.
 	}
 
 }
