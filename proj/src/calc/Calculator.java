@@ -6,7 +6,7 @@ public class Calculator {
 	private float z;
 		
 	public float calcR() {
-		return  this.x/100*this.y;
+		return  this.x/100*this.y;//расход на 1км
 	}
 	public float calcS(float r) {
 		return r*this.z;

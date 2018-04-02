@@ -10,13 +10,12 @@ public class GUI extends JFrame {
 	public JTextField t1, t2, t3;
 	public Obr handler;
 	
-
 	public GUI () {
 		super("Расчет расхода топлива");//Название окна
 		this.setSize(300,250);//Размер окна
 		this.setResizable(false);//Запрет на изменение размера окна
 		this.setLocationRelativeTo(null);//окно по середине экрана
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//кнопка закрытия окна
 		setLayout(new FlowLayout());
 		b1 = new JButton("                    Посчитать                    ");
 		l1 = new JLabel("                    Введите данные:                    ");
@@ -27,8 +26,7 @@ public class GUI extends JFrame {
 		t1 = new JTextField(10);
 		t2 = new JTextField(10);
 		t3 = new JTextField(10);
-		
-		
+				
 		add(l1);
 		add(l2);
 		add(t1);
@@ -38,10 +36,7 @@ public class GUI extends JFrame {
 		add(t3);
 		add(b1);
 		add(l5);
-		
 	}
-
-
 }
 	
 
