@@ -20,7 +20,7 @@ public class Obr implements ActionListener{
 			calculator.setZ(z);
 			r = calculator.calcR();
 			s = calculator.calcS(r);
-			a = "Расход топлива на " + y + " км. равна " + r + " л. за " +s + " р.";//вывод результата
+			a = "Расход топлива на " + y + " км. равна " + Math.round(r) + " л. за " + Math.round(s) + " р.";//вывод результата
 			gui.l5.setText(a);//вывод результата
 		} catch(NumberFormatException e) {
 			gui.l5.setText("Не правильно введены значения");
